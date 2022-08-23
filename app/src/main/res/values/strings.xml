@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">FUnApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_text">Planning Your Day Off Is Easier Now</string>
+    <string name="are_you_tir">Are you tired of being unable to choose what you wanted to do on your day off ? You can relax and let us take care of that.</string>
+    <string name="moreInfo">Dont have an account yet? Register Here</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="create_an_a">Create an Account</string>
+    <string name="AlreadyHaveAccount">Already have an account?</string>
 </resources>
