@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--TODO Step 7: Design the register screen layout.-->
 <!--START-->
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.LoginFragment">
+    tools:context=".auth.RegisterFragment">
 
     <FrameLayout
         android:id="@+id/fl_header_image"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -79,7 +81,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btn_register"
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -89,7 +91,7 @@
         android:background="@color/purple_200"
         android:foreground="?attr/selectableItemBackground"
         android:gravity="center"
-        android:text="Login"
+        android:text="Register"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -98,6 +100,7 @@
         app:layout_constraintTop_toBottomOf="@id/til_register_password" />
 
     <LinearLayout
+        android:id="@+id/llActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
@@ -105,7 +108,7 @@
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_register">
+        app:layout_constraintTop_toBottomOf="@id/btnRegister">
 
         <TextView
             android:id="@+id/tv_don_t_have_an_account"
@@ -127,3 +130,4 @@
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--END-->

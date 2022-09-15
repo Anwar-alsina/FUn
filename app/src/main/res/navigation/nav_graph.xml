@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/activitiesFragment">
+    app:startDestination="@id/introFragment">
 
     <fragment
         android:id="@+id/introFragment"
@@ -14,21 +14,33 @@
             android:id="@+id/action_introFragment_to_loginFragment2"
             app:destination="@id/loginFragment2" />
         <action
-            android:id="@+id/action_introFragment_to_activitiesFragment"
-            app:destination="@id/activitiesFragment" />
+            android:id="@+id/action_introFragment_to_registerFragment3"
+            app:destination="@id/registerFragment3" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment2"
-        android:name="com.example.funapp.ui.login.LoginFragment"
+        android:name="com.example.funapp.auth.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment2_to_activitiesFragment"
-            app:destination="@id/activitiesFragment" />
+            android:id="@+id/action_loginFragment2_to_registerFragment3"
+            app:destination="@id/registerFragment3" />
     </fragment>
     <fragment
-        android:id="@+id/activitiesFragment"
-        android:name="com.example.funapp.ActivitiesFragment"
-        android:label="fragment_activities"
-        tools:layout="@layout/fragment_activities" />
+        android:id="@+id/registerFragment3"
+        android:name="com.example.funapp.auth.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment3_to_activityFragment"
+            app:destination="@id/activityFragment" />
+        <action
+            android:id="@+id/action_registerFragment3_to_loginFragment2"
+            app:destination="@id/loginFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.example.funapp.ActivityFragment"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
 </navigation>
